@@ -1,1 +1,11 @@
+for(int j=0;j<11;++j)
+{
+	cout<<j<<endl;
+}
+
 bushuev
+
+for(int i=0;i<10;++i)
+{
+	cout<<i<<endl;
+}
