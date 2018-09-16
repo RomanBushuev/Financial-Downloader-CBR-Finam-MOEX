@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="400e1274-d170-4c25-a330-098bc93e6586" name="UMLClassDiagram3" linkedPackageId="d7394c5f-343f-41a3-9e33-b63967d9f710" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e9335d27-99ff-4ae2-a5dc-899bd70f3d8e">
+      <profileInstance Id="1a2e148c-0a93-4591-b28f-75efaef388b5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1892ec0c-4b79-42e7-941a-0ec2c85849f2">
+      <profileInstance Id="aece730b-2af0-451f-9ef0-bcd19d5613ea" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="0442403f-19ae-4638-ad55-050b1d533671" name="TimeSeriesAttribute" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7ea8a6bc-ff98-4d25-9480-eb1b09d6fe79" />
+        <ownedLiterals>
+          <enumerationLiteral Id="af2ecc28-9ecc-4ac5-ae7a-8e1e073667dd" name="Default">
+            <elementDefinition Id="5e9909df-3aa7-4026-9735-ed559747a0d1" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="5ed81fad-c5c7-49c2-b847-b06a13e9f89a" name="Close">
+            <elementDefinition Id="bcebbca3-3903-4f99-9f04-04189ada2ca0" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="bfca952c-1b54-4af2-a960-8998f428e59d" name="Volat">
+            <elementDefinition Id="8a8c4910-48b6-42d3-ab06-1dd2676e10dc" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="16fb2986-8f29-4232-bbe5-b214838c917c" name="Var">
+            <elementDefinition Id="435e5db8-e44e-4f26-ba8b-0c6f0ae42f14" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="2918dac0-4b77-45c0-8a73-9e15c2b9e7cd" name="Yield">
+            <elementDefinition Id="694a5715-c8f9-431b-b3c0-d2863b97cdc1" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cd748bfd-d9d7-4770-ba49-6e8649dd55d9" name="TimeSeries" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4f64e887-d63e-4448-b0f5-3110c3197e80" />
+        <ownedAttributesInternal>
+          <property Id="3c6a4018-06ef-4b2b-81ab-e99c5ef5ddaa" name="_series" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="28bef543-12eb-4aa3-a2b3-38b16c2bad6f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="58dbfe6c-588d-42ee-820f-e2f75e42a0e7" LastKnownName="Dictionary&lt;DateTime, decimal&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="6ad7cd9d-b491-4e7b-a142-611627204732" name="_attribute" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f0b97f2-e176-454b-b7e5-8b70d655f0b2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e0d7d782-efe8-4a1c-bf64-d89e288f81f7" LastKnownName="TimeSeriesAttribute" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="2a2c50f5-cdfd-4c1b-b108-c47126db879b" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="36d4406a-b45e-475e-9a30-8633e382f9fd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9b3d0103-5a0b-44f0-898c-09c1f65dc1e6" name="DateTime date" direction="In" isUnique="false">
+                  <elementDefinition Id="752b2638-9ef3-4e70-b8cd-39b7b8413259" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8407da11-7d6b-4583-aa69-b7ba0ab5a477" name="decimal val" direction="In" isUnique="false">
+                  <elementDefinition Id="77e66f47-f1a7-45de-9b7c-22a258e1c100" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5b3b8d0f-bafd-48ae-abf2-d53fa7406964" name="Contains" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fcab41b3-8f40-48b9-9d39-7acb2bf1b383" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b4d5aa73-b6a0-4fd8-9d8c-6169920dc90d" name="DateTime date" direction="In" isUnique="false">
+                  <elementDefinition Id="6d4b7428-6f03-4ea5-b0d5-9f4c3ae2fdf6" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ed173544-cbf9-426f-952c-c7b3e6b94c60" direction="Return">
+                  <elementDefinition Id="ea1cbbec-e169-48ee-9616-50396f8bdc37" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6dd8d2f-ddff-4bf6-b5fb-e6d107deb235" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9a2c4e87-ae46-4df4-99ce-fd5b5ac5d1d4" name="GetSeries" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="412619ad-2621-43eb-bc2a-7fccc2bf81a8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="100e0030-d965-409f-9763-265683e92cb3" direction="Return">
+                  <elementDefinition Id="66957336-ae79-471c-bbe7-69dee525a3af" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6b92066d-1559-42a6-bb8b-da1f9147b0bd" LastKnownName="Dicionary&lt;DateTime,decimal&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d07aaf00-f21d-43fe-ae45-a37a28810f1a" name="GetAttribute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f97781fd-f055-4e34-b2af-38d3e8e4b118" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5e1d16f2-8aec-48d4-a2ef-341e1402c72d" direction="Return" isUnique="false">
+                  <elementDefinition Id="398a79f4-cd47-4194-a3cd-2a977925c9ef" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e0d7d782-efe8-4a1c-bf64-d89e288f81f7" LastKnownName="TimeSeriesAttribute" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="58dbfe6c-588d-42ee-820f-e2f75e42a0e7" name="Dictionary&lt;DateTime, decimal&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionary&lt;DateTime, decimal&gt;">
+        <elementDefinition Id="dbe9a627-1ecc-43a2-86b2-a8cc9235767f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e6dd8d2f-ddff-4bf6-b5fb-e6d107deb235" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e0d7d782-efe8-4a1c-bf64-d89e288f81f7" name="TimeSeriesAttribute" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::TimeSeriesAttribute">
+        <elementDefinition Id="7ea8a6bc-ff98-4d25-9480-eb1b09d6fe79" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6b92066d-1559-42a6-bb8b-da1f9147b0bd" name="Dicionary&lt;DateTime,decimal&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dicionary&lt;DateTime,decimal&gt;">
+        <elementDefinition Id="07359786-0cf2-45dd-83a9-7fc038be7072" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="d7394c5f-343f-41a3-9e33-b63967d9f710" name="ModelingProject1">
+    <elementDefinition Id="605427f5-01cd-4049-9c79-14bc4dcdb4f3" />
+  </package>
+</logicalClassDesignerModel>

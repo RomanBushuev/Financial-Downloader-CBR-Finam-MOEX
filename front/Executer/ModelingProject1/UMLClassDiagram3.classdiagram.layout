@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram3">
+  <logicalClassDesignerModelMoniker Id="400e1274-d170-4c25-a330-098bc93e6586" />
+  <nestedChildShapes>
+    <enumerationShape Id="4a3a80e0-3c04-4ad8-9e6c-6ea99d6c4b3f" absoluteBounds="4.75, 1.375, 2.125, 1.4919530927141507" hideQualifiedName="false" increaseHeight="0" customColor="161, 150, 103">
+      <enumerationMoniker Id="0442403f-19ae-4638-ad55-050b1d533671" LastKnownName="TimeSeriesAttribute" />
+      <nestedChildShapes>
+        <LiteralElementListCompartment Id="7402659c-11ba-46de-9aae-a3de5d60fb21" absoluteBounds="4.765, 1.7650000000000001, 2.0949999999999998, 1.0019530927141505" name="LiteralsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </enumerationShape>
+    <classShape Id="fff9e7f8-7258-4032-998b-4719afed7c04" absoluteBounds="1.625, 1.375, 2.875, 1.8632812052965164" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="cd748bfd-d9d7-4770-ba49-6e8649dd55d9" LastKnownName="TimeSeries" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="df88ca61-9c83-4d3b-a426-35c68bf1d3c3" absoluteBounds="1.64, 1.7650000000000001, 2.8449999999999998, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="9f730508-bcb3-4ab4-be73-ef1d4239b40e" absoluteBounds="1.64, 2.296484357615312, 2.8449999999999998, 0.84179684768120444" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

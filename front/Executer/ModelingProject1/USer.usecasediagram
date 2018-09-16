@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c8c1f5ff-5f2f-4321-b1bb-9f58352ca275" name="USer" linkedPackageId="fc914d99-6db4-4b0f-9fef-95ed9143967d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="ab4c9625-3249-499f-a117-406c875d9843">
+      <profileInstance Id="b7d7f6b7-c39f-4586-9b20-1e93cdea43b3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="423c5cc1-3fa0-4d6b-8641-cfdd92e97e78">
+      <profileInstance Id="f9c13d3d-e550-4f04-9c8d-fdaa71f5c8ce" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="0c22f440-bfd8-4198-bf4c-c855512c6b29" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="998742a5-44e0-4244-80cd-889eb980bf15" />
+        <targetEnds>
+          <association Id="c9223b4c-eb0f-4519-9fe3-8d78ff2d83d0" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Get financial instrument scalars" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d0ab5f94-7152-442b-a6e1-1fc9c8181f47" LastKnownName="Get financial instrument scalars" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25c94ec4-c734-4684-b440-8ba766b0fa88" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6d4f7bfe-a980-485d-a3f5-6ce59b1403c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fdf56b9-6186-4b94-95e8-c5146763d785" name="Get financial instrument scalars" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e1f51fa-afe0-45ed-8fbe-e2119d07f691" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c71506fd-037c-4776-a6b8-9e88fc0c6434" />
+          </association>
+          <association Id="96de3b33-dd91-404b-8678-ea25bec0a547" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Get financial instrument quotes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2c9e462d-bfcc-4f94-9ea0-ffd593263165" LastKnownName="Get financial instrument quotes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a4b4aad-1bc1-495e-8e8d-f47bea696a2f" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bfcee2d5-33c3-461f-929f-dc5e0fc58fe9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="82f59718-011c-4baf-b82c-5163213863af" name="Get financial instrument quotes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f8681a55-6526-4a36-9c0c-7721adec2068" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ac27c0ad-7afa-4f12-b89c-9422d94dd8ab" />
+          </association>
+          <association Id="09a02007-7fa9-4098-8fbc-8904e3c5d497" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Get financial instrument cash flows" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0b3f990b-2820-4730-9d8a-1d536816da08" LastKnownName="Get financial instrument cash flows" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f44f1826-d7b9-4901-a442-203b0d43624a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="daf43e43-97cb-4c97-a554-c1ef44f17696" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62b97332-f93f-4549-aa56-80ea980af2c3" name="Get financial instrument cash flows" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4a192999-068b-4fb3-b29f-097423abea8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1683d3d1-51b4-4290-9633-7609fcdfed75" />
+          </association>
+          <association Id="0e8e0283-3fd6-4a26-9ef2-646f33af7569" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Get currency information" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c1c89f59-bc45-485d-9458-4c23ca01859b" LastKnownName="Get currency information" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="07c56954-9ddb-4645-824b-459d77ea44c9" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="35eb443c-cf72-485f-a610-fcfefd6d9c90" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b2580db6-7473-4810-8b46-66db28e4c12f" name="Get currency information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dcec392a-ae22-4e05-bf42-c3bb70f08bd2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aee19482-8d76-40ff-bab2-b2786186de67" />
+          </association>
+          <association Id="e31c5ad6-7c1d-471e-926b-357a25476a17" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Get discount rate information" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="07449917-38de-4a0f-8be3-55501f88e70f" LastKnownName="Get discount rate information" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8713b3ea-cda4-47de-9ecd-7770c56c6be5" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a14c9451-98d8-4375-a031-82f8a046e610" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bcd06248-1c3e-4495-9cf4-e11b852f4b9e" name="Get discount rate information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f419c6eb-11b8-4fd8-acb4-47cedb31ac6b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="23798871-c96e-4502-a662-bf95803c5d24" />
+          </association>
+          <association Id="89853acb-c885-4209-95c3-961c716afa8c" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add calculation in queue" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e025eb76-aeae-4ab5-8393-ef1f9371f600" LastKnownName="Add calculation in queue" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4866c3a1-b3b2-4de9-9c23-0b92c4cd9ffd" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="38107f99-d309-441f-a527-0a8aaf33fbc9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1fa8f9b9-5b80-4c25-a1df-b25469a10a3f" name="Add calculation in queue" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5e5aa1c6-521f-4c08-8a08-d474299c2b89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="144f50b6-fd0f-4c70-8d76-de3947433490" />
+          </association>
+          <association Id="fd792cb4-0b28-4d5e-b3c2-705ccc81ec05" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Run Executor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="780363d1-2339-4fab-8e42-35664ab7a343" LastKnownName="Run Executor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95cd02dd-9dfe-4343-befe-32f6829fe68c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3574dd9c-7dba-4884-bece-bb5af217165a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec80fb60-8665-4a76-bb4b-327cd786349f" name="Run Executor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9537ae9f-5620-4ca8-88c3-1fd34bee3d4e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ae409293-9ab6-4353-b23e-c0cffd438cb1" />
+          </association>
+          <association Id="7123974e-ddd8-42c3-9304-0dae4a9aa7b5" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Get financial attributes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="630ae1f9-7a4c-45e5-8c19-1de4280c4094" LastKnownName="Get financial attributes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e8cb1234-da02-4076-89f1-953094035480" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="52965235-4e35-4265-a41e-59ace79ef6fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b0d0354-ee3d-46fb-9769-301aa385b76e" name="Get financial attributes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12e9d029-b947-4ed2-8768-d3a9398f8e53" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="273bdd71-b363-4d88-b95e-450499f1f0aa" />
+          </association>
+          <association Id="1e7167f0-df21-4a3e-89a9-bb9019405385" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Get dictionary of attributes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7af27e8e-f68c-4c8a-bf6b-cecbeb80951d" LastKnownName="Get dictionary of attributes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cea3aa72-f8b1-488b-bb7f-66e5b981634a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fcbccb51-8fb4-4a4f-8c83-b21fd096f310" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7d003c94-6466-4226-9523-ec1843f71ef0" name="Get dictionary of attributes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d436661a-ac3f-4bc5-b165-84c31150292c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9fd52dae-2c99-4e46-ace3-2ab392e664e2" />
+          </association>
+          <association Id="c58513c6-13f6-4e91-b26a-1ab07f586217" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Find financial instrument" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9f7b0408-6e07-4693-81b3-4e54ce03644c" LastKnownName="Find financial instrument" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b584dc5b-1bee-4b92-a509-734704e9d2d6" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2fd75efe-995e-4fbe-9289-20056c1e141e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0da51c23-9dd3-42bd-8c58-5ade376aeb8e" name="Find financial instrument" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1df7acce-7bd4-4059-a287-fee57e3c0dcc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2d63af13-0e20-4260-9aa3-98507bc653e3" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d0ab5f94-7152-442b-a6e1-1fc9c8181f47" name="Get financial instrument scalars" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0a6c17df-3a0b-4632-8bf8-bfc37a06d3d9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2c9e462d-bfcc-4f94-9ea0-ffd593263165" name="Get financial instrument quotes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0b578dca-75c5-4e40-8ec3-85480cfb4e37" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0b3f990b-2820-4730-9d8a-1d536816da08" name="Get financial instrument cash flows" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a4c2ce7c-7c02-4ccb-b2e5-5f4a6e9e5444" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c1c89f59-bc45-485d-9458-4c23ca01859b" name="Get currency information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f6100e62-2493-493b-9642-4d42927c8c04" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="07449917-38de-4a0f-8be3-55501f88e70f" name="Get discount rate information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6cd8a572-6028-41c1-917a-ab514b3a7dff" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e025eb76-aeae-4ab5-8393-ef1f9371f600" name="Add calculation in queue" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1dd6df2-a238-4348-aa06-cf7ed4e9b093" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="780363d1-2339-4fab-8e42-35664ab7a343" name="Run Executor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="afbd915d-8d1d-423e-994f-b2db5fb4c2e4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="630ae1f9-7a4c-45e5-8c19-1de4280c4094" name="Get financial attributes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="53f74561-05eb-4c4f-b82f-41460936c2be" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7af27e8e-f68c-4c8a-bf6b-cecbeb80951d" name="Get dictionary of attributes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="74e5137e-0d60-4d3f-810e-c1161068cb3a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9f7b0408-6e07-4693-81b3-4e54ce03644c" name="Find financial instrument" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="faafa643-1988-4c11-b319-746beffcb5aa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="fc914d99-6db4-4b0f-9fef-95ed9143967d" name="ModelingProject1">
+    <elementDefinition Id="605427f5-01cd-4049-9c79-14bc4dcdb4f3" />
+  </package>
+</useCaseModelRoot>

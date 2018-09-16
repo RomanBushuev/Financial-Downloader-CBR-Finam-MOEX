@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="cefc02c5-df18-4b43-bc52-27783724d1f6" name="UMLClassDiagram2" linkedPackageId="608b3510-5f91-4b2f-adc9-cc31a5b0720a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="41ebfa17-5330-4552-b35b-4a23c804d6d8">
+      <profileInstance Id="1c127d1c-8ea0-43f2-94bd-63ca5086aab4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a1563913-3476-45b2-bf8a-1a991ea857e6">
+      <profileInstance Id="8b2f63f6-8854-4959-8624-8ff5c007ebe7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="43b99cf5-ff58-4044-9150-6ff018454aa8" name="Scalar&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e4aade5f-c2cc-4a56-ad02-109aaaab10b9" />
+        <ownedAttributesInternal>
+          <property Id="39c9a6f7-a347-4f73-967b-cc232b8ad880" name="_store" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d557300c-dfa1-4872-8f5c-9b4799e0593d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3a9633ae-01a0-421a-949a-c909bacbf2b0" LastKnownName="Dictionary&lt;DateTime,T&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7a0e3f71-fa84-4150-a31a-e159bb6e504c" name="HasValue" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="622925fa-82ed-4259-879b-92debe022306" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="401b7e55-9592-4e1f-bc74-070491cf9bc3" name="DateTime date" direction="In" isUnique="false">
+                  <elementDefinition Id="a3c42f3c-078d-4f39-9eb7-70d0e0c0f306" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a8776ba1-9e7d-4a15-839d-fdcb04dc58a4" name="Get" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="74dd813c-8e63-4209-8dbf-2fabe210434a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="40ad3459-19de-488f-8fee-9a82ef6ba648" name="DateTime date" direction="In" isUnique="false">
+                  <elementDefinition Id="f3fa1477-0ea8-44ef-9067-e38ffe8471b5" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="858f4654-810c-46dc-a7f5-2dbcc1f835de" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="17306e84-19c0-40c2-a3a1-21369943d62f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="63ce8927-612f-4929-bbef-992c362533cc" name="DateTime date" direction="In" isUnique="false">
+                  <elementDefinition Id="51d93217-d349-4fff-ac12-97544ac6048f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b6334551-cf44-42f8-9b2d-e155857fe384" name="T val" direction="In" isUnique="false">
+                  <elementDefinition Id="311a5263-f39a-4cd4-9d73-320a49c8a535" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5ba07219-9ab6-47c9-9435-54269f6a1290" name="Scalar&lt;T&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ece67c8c-0dfe-48d0-b214-743f824c0553" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3a9633ae-01a0-421a-949a-c909bacbf2b0" name="Dictionary&lt;DateTime,T&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionary&lt;DateTime,T&gt;">
+        <elementDefinition Id="b79fda63-10b5-48bc-b98e-187e9e34f9e1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4ff46dde-7a14-47bd-abf1-9ae762892e51" name="ScalarEnum" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e7ccb54f-f49f-4804-968f-da5304cb4e3b" />
+        <generalsInternal>
+          <generalization Id="fe36fb69-0a31-49a6-8d21-250fba9af6cc" isSubstitutable="false">
+            <classMoniker Id="43b99cf5-ff58-4044-9150-6ff018454aa8" LastKnownName="Scalar&lt;T&gt;" />
+            <elementDefinition Id="f41e5d0b-68ba-4da5-b2e2-64a0bfb7772d" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="70fb05e8-7a55-45e0-a192-9f25f1b87d73" name="Scalar&lt;Enum&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a1252bfe-156f-435e-b28c-c9387a148bff" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="12f75d0c-c2b1-4d18-9378-5a8bc85e9345" name="ScalarStr" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b3fa064-b7b4-4e99-a2d8-34a3e2e44e8e" />
+        <generalsInternal>
+          <generalization Id="2fbdf49d-6f6d-4eee-884a-0c684bb88692" isSubstitutable="false">
+            <classMoniker Id="43b99cf5-ff58-4044-9150-6ff018454aa8" LastKnownName="Scalar&lt;T&gt;" />
+            <elementDefinition Id="a6610556-1380-4a56-9f9a-f771e2be8c77" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="89d6ff75-906a-4942-b117-22f524057483" name="Scalar&lt;string&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="97f956ce-4420-4a10-ae78-bdceb7c151d4" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="87c63dea-5ca9-443e-92fb-f804cba0ad67" name="ScalarNum" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f1e2d11e-297e-431f-8ca6-c8764c3ec7b1" />
+        <generalsInternal>
+          <generalization Id="634d9136-be46-4182-b98b-36c0a91fc847" isSubstitutable="false">
+            <classMoniker Id="43b99cf5-ff58-4044-9150-6ff018454aa8" LastKnownName="Scalar&lt;T&gt;" />
+            <elementDefinition Id="4702ad75-8081-40ba-971e-3a9f8414051d" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="3fc6c4ee-9d7e-427e-bad7-09a330d10448" name="Scalar&lt;decimal&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="984431ac-478b-4a63-80fa-c866789c7523" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="657b5062-228a-441d-9fc9-1aa92e849105" name="ScalarDate" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2f0db658-f5d1-4fdb-8003-2fa4a8942df4" />
+        <generalsInternal>
+          <generalization Id="ca12a2cb-fcf5-4d8e-9050-f472f5657c76" isSubstitutable="false">
+            <classMoniker Id="43b99cf5-ff58-4044-9150-6ff018454aa8" LastKnownName="Scalar&lt;T&gt;" />
+            <elementDefinition Id="30e0e5d5-7451-46b7-a413-600151392ce4" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="82b4ee6f-b36d-4c67-b90d-e10c66a66f6b" name="Scalar&lt;DateTime&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f817778c-406b-465b-b38a-ac66b7ff25fe" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="608b3510-5f91-4b2f-adc9-cc31a5b0720a" name="ModelingProject1">
+    <elementDefinition Id="605427f5-01cd-4049-9c79-14bc4dcdb4f3" />
+  </package>
+</logicalClassDesignerModel>

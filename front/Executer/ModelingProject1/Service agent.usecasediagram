@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a3e4be77-9474-4b64-a721-6a15a2ea7da6" name="Service agent" linkedPackageId="feebe835-58ad-4db4-8ed4-04313e7b3f09" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="1e53ee6f-2edc-4259-9385-ffeec7ece86d">
+      <profileInstance Id="85e78340-e50d-4b47-bccf-56ec9966de9f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="846be098-b51d-488c-8bda-836afc84d697">
+      <profileInstance Id="94c60110-d3a6-41c6-ad13-3f231e8a1466" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="62f734a1-12b3-42ef-8808-77d593412cd1" name="Service agent" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e24d968c-7cf9-456f-974b-9ffe0b6a50b9" />
+        <targetEnds>
+          <association Id="5423d38e-ff71-4058-920a-283822c3af43" isDerived="false" sourceEndRoleName="Service agent" targetEndRoleName="Service agent" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="af5ea865-b052-4792-83b5-1ec9a3b83639" LastKnownName="Check queue" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="932fe7aa-7649-4029-844b-3c878b530a96" name="Service agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="99195b83-adf7-48bb-9e65-a725dc2be677" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d499ec2-f537-4430-b1fa-9619f0202770" name="Service agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9f853c38-331b-4c81-ac33-adabdeb2228b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="77672c2b-7fa2-4922-b048-92cae612563e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="af5ea865-b052-4792-83b5-1ec9a3b83639" name="Check queue" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9fd97c49-3604-425b-9dfc-6de9dd924a7f" />
+        <extendedCases>
+          <extend Id="a0dfae16-9e05-4bf6-ba49-4d8057b18310">
+            <useCaseMoniker Id="e9b78905-c482-4244-938d-ff5ab270a60d" LastKnownName="Convert rates" />
+            <elementDefinition Id="a5ab0252-b744-4cd8-97e4-9ad664da180b" />
+          </extend>
+          <extend Id="ef671a72-c1cc-434a-9f0a-55c3d0424b01">
+            <useCaseMoniker Id="57676a7f-c533-4605-97a3-46faa7b32a3a" LastKnownName="Convert offers" />
+            <elementDefinition Id="7da77a0b-1f0c-4153-aec0-d39572c297c7" />
+          </extend>
+          <extend Id="c6e56a75-0383-453f-8a51-658b2d719b33">
+            <useCaseMoniker Id="fda7cd6c-b3e7-4324-97f8-9f75b347f95d" LastKnownName="Convert currencies" />
+            <elementDefinition Id="0d12a84f-1226-485e-bf6e-5d9f5df773f1" />
+          </extend>
+          <extend Id="9eb7043b-a238-4455-b82a-4c1e45dc9652">
+            <useCaseMoniker Id="6f8b700f-ba09-484a-ac0f-fb363580d401" LastKnownName="Convert RUONIA" />
+            <elementDefinition Id="1b9927d8-4fdc-484a-ab8d-d56d340c2912" />
+          </extend>
+          <extend Id="ca99de47-31b9-481c-90ed-6bde2ae88e5e">
+            <useCaseMoniker Id="ad224c51-2457-4d0b-be21-ca9827ffc1cc" LastKnownName="Convert discount rate" />
+            <elementDefinition Id="c032ab42-8a9d-452f-8e23-1f74934002d7" />
+          </extend>
+          <extend Id="64de7f2d-0b6c-47b1-9c48-1efbbe464e83">
+            <useCaseMoniker Id="e38121ca-f365-443f-b7f7-29442c7c2751" LastKnownName="Calculate yield" />
+            <elementDefinition Id="f658251b-ec98-416f-8264-2f018c1b8aef" />
+          </extend>
+          <extend Id="e6811841-e6e6-4d0f-b546-16bcdd073520">
+            <useCaseMoniker Id="e6fc3c51-52f4-4df1-bd77-d28e3ac096b4" LastKnownName="Calculate volat" />
+            <elementDefinition Id="25c23f6f-bf00-4dac-8058-e4a25cc76d60" />
+          </extend>
+          <extend Id="2dd315ec-7286-4741-8e23-ad8d57b97608">
+            <useCaseMoniker Id="464d0b5c-2d31-4609-98c2-aa8f52ccb4cb" LastKnownName="Calculate var" />
+            <elementDefinition Id="9c3fd1a0-6478-4939-9eb1-1c3f50c330fb" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e9b78905-c482-4244-938d-ff5ab270a60d" name="Convert rates" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dde261e1-cb58-40a5-b156-90d0305f5736" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="57676a7f-c533-4605-97a3-46faa7b32a3a" name="Convert offers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a8fcd02a-cabd-4f77-b252-891b12f632b0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fda7cd6c-b3e7-4324-97f8-9f75b347f95d" name="Convert currencies" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f70b1f2-db37-4231-a0e1-5df62a9dedbe" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ad224c51-2457-4d0b-be21-ca9827ffc1cc" name="Convert discount rate" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="07674b6a-7480-4a91-80d9-d1940f5c2d15" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6f8b700f-ba09-484a-ac0f-fb363580d401" name="Convert RUONIA" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3f5b32bd-a7f6-4846-adb4-6e30258cf29c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e38121ca-f365-443f-b7f7-29442c7c2751" name="Calculate yield" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ff9db612-7826-4013-8d30-c187bab00b4c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e6fc3c51-52f4-4df1-bd77-d28e3ac096b4" name="Calculate volat" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4db6d014-0f92-49f3-ae9c-4a9d7348e48c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="464d0b5c-2d31-4609-98c2-aa8f52ccb4cb" name="Calculate var" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="85730c1d-3999-4180-863c-a60b8e6a1ce6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="feebe835-58ad-4db4-8ed4-04313e7b3f09" name="ModelingProject1">
+    <elementDefinition Id="605427f5-01cd-4049-9c79-14bc4dcdb4f3" />
+  </package>
+</useCaseModelRoot>

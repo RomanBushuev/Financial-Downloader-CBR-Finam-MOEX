@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6B923BD-06CC-4B0B-ADDF-A44C7C26C7C0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExecutorTask</RootNamespace>
+    <AssemblyName>ExecutorTask</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Algorithms\General\CalculateVar\Algorithms.General.CalculateVar\Algorithms.General.CalculateVar.csproj">
+      <Project>{48e72cbe-b1a2-4511-95c5-b69b767006ce}</Project>
+      <Name>Algorithms.General.CalculateVar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Algorithms\General\CalculateVolat\CalculateVolat.csproj">
+      <Project>{310ebc62-4b0d-463b-a2dc-79c04dc489ae}</Project>
+      <Name>CalculateVolat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Algorithms\General\CalculateYield\Algorithms.General.CalculateYield\Algorithms.General.CalculateYield.csproj">
+      <Project>{d4ae9a73-5a60-42f9-813b-a209e240c2d8}</Project>
+      <Name>Algorithms.General.CalculateYield</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConvertData\ConvertData.csproj">
+      <Project>{71a937e6-3671-4a47-805d-d72a4601e923}</Project>
+      <Name>ConvertData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataBaseLink\DataBaseLink\DataBaseLink.csproj">
+      <Project>{cde8eb37-79da-4c69-9c3e-88368cc93523}</Project>
+      <Name>DataBaseLink</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataProvider\Input\CombinedProvider\DataProvider.Input.CombinedProvider\CombinedProvider.csproj">
+      <Project>{6a1b1a0b-4909-46d1-ae18-601dd6a7ead1}</Project>
+      <Name>CombinedProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataProvider\Input\CsvReader\CsvReader.csproj">
+      <Project>{0ee98652-fe97-461f-859f-fef463f57ec1}</Project>
+      <Name>CsvReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataProvider\Input\MirReader\MirReader\MirReader.csproj">
+      <Project>{58a840c0-95d3-4441-9288-91193b65ddb5}</Project>
+      <Name>MirReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataProvider\Output\DataProvider.Output.Excel\DataProvider.Output.Excel\DataProvider.Output.Excel.csproj">
+      <Project>{f6362a8a-ceee-4da5-9af8-a0038fb10187}</Project>
+      <Name>DataProvider.Output.Excel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataProvider\Output\DataProvider.Output.Mir\DataProvider.Output.Mir.csproj">
+      <Project>{02e3abb5-62ad-48d9-a07e-bf8a9442e461}</Project>
+      <Name>DataProvider.Output.Mir</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcelReader\ExcelReader.csproj">
+      <Project>{899b91f5-ef98-4613-bfd3-a4fd22c544f7}</Project>
+      <Name>ExcelReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mir\Mir\Core.Mir.csproj">
+      <Project>{226c45b2-ac1b-403b-a9af-4e6d512d5dae}</Project>
+      <Name>Core.Mir</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

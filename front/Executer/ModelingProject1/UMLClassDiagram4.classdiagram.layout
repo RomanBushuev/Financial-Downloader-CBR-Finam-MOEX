@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram4">
+  <logicalClassDesignerModelMoniker Id="5b9543e4-5f17-42d9-b477-4b06ddbd3b04" />
+  <nestedChildShapes>
+    <enumerationShape Id="f828147a-5382-4621-8da6-08ddd1cd9ffb" absoluteBounds="4.5, 1.875, 2, 1.1716406026482584" hideQualifiedName="false" increaseHeight="0" customColor="161, 150, 103">
+      <enumerationMoniker Id="76a6e055-656d-4821-bd4f-1d5a98ba61b2" LastKnownName="CashFlowAttribute" />
+      <nestedChildShapes>
+        <LiteralElementListCompartment Id="e2ce7a48-ff9d-4cf4-9d30-812447ff7ce1" absoluteBounds="4.515, 2.265, 1.9700000000000002, 0.68164060264825832" name="LiteralsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </enumerationShape>
+    <classShape Id="baa8b8fb-fa10-4384-8a52-7c59561bc0b5" absoluteBounds="1, 1.875, 3.125, 1.7031249602635703" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="652a0c9c-59b8-4c5c-88ea-2dbaa7d3ccfe" LastKnownName="CashFlow" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="2b8fbd83-399b-4856-bc32-428bd3108c83" absoluteBounds="1.015, 2.265, 3.0949999999999998, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="070faf77-8a82-4b37-8c59-ac97f842589a" absoluteBounds="1.015, 2.796484357615312, 3.0949999999999998, 0.68164060264825832" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

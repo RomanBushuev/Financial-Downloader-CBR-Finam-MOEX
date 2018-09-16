@@ -1,0 +1,18 @@
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetRuonia\GetRuonia\bin\Debug\GetRuonia.exe.config
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetRuonia\GetRuonia\bin\Debug\GetRuonia.exe
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetRuonia\GetRuonia\bin\Debug\GetRuonia.pdb
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetRuonia\GetRuonia\obj\Debug\GetRuonia.csprojResolveAssemblyReference.cache
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetRuonia\GetRuonia\obj\Debug\GetRuonia.exe
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetRuonia\GetRuonia\obj\Debug\GetRuonia.pdb
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\bin\Debug\GetRuonia.exe.config
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\obj\Debug\GetRuonia.exe
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\obj\Debug\GetRuonia.pdb
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\bin\Debug\GetRuonia.exe
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\bin\Debug\GetRuonia.pdb
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\obj\Debug\GetRuonia.csprojResolveAssemblyReference.cache
+C:\Users\RomanBushuev\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\bin\Debug\GetRuonia.exe.config
+C:\Users\RomanBushuev\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\obj\Debug\GetRuonia.exe
+C:\Users\RomanBushuev\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\obj\Debug\GetRuonia.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\bin\Debug\GetRuonia.exe
+C:\Users\RomanBushuev\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\bin\Debug\GetRuonia.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\CBR\scripts\GetRuonia\GetRuonia\obj\Debug\GetRuonia.csprojResolveAssemblyReference.cache

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DownloadRUONIA">
+  <activityRootModelMoniker Id="5ce81735-b9a4-41cb-a743-c977d5689b03" />
+  <nestedChildShapes>
+    <initialNodeShape Id="bf692015-f0eb-4ad6-a6eb-92855aa795d6" absoluteBounds="0.625, 1, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="0c923664-5034-4701-a491-0fed15736f14" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="9fb645b6-73c8-48f5-8859-3ef2a5fc1dcd" absoluteBounds="1.375, 0.875, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="e8b69e6b-acfb-457b-b20a-1774a2344509" LastKnownName="Send query to CBR" />
+    </actionShape>
+    <actionShape Id="05f152b0-9bd8-42e8-af94-b29a26951149" absoluteBounds="1.375, 1.5, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="38260937-4a14-4f92-96cf-a342faeeb4e1" LastKnownName="Save given results in csv" />
+    </actionShape>
+    <actionShape Id="6399c48b-5526-47a4-a726-59d7fc6a8a6d" absoluteBounds="1.375, 2.125, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="591a0929-1455-4a74-bde4-c9d6fb872f6c" LastKnownName="Make a record in queue" />
+    </actionShape>
+    <activityFinalNodeShape Id="0e32f5e9-0e2e-403e-8b56-1788dfcd521b" absoluteBounds="0.625, 2.25, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="cd631a64-acbe-4f77-bfcf-076fabce86bd" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <controlFlowConnector edgePoints="[(0.75 : 1.0625); (1.375 : 1.0625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="2e3b4a0d-25a7-4c91-aa33-d24bfd3d6b9c" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="bf692015-f0eb-4ad6-a6eb-92855aa795d6" />
+        <actionShapeMoniker Id="9fb645b6-73c8-48f5-8859-3ef2a5fc1dcd" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(1.9375 : 1.25); (1.9375 : 1.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="4e6c3736-c57f-449c-8e3a-4aaa5e754505" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="9fb645b6-73c8-48f5-8859-3ef2a5fc1dcd" />
+        <actionShapeMoniker Id="05f152b0-9bd8-42e8-af94-b29a26951149" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(1.9375 : 1.875); (1.9375 : 2.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="e38d6aa7-0332-4577-8f4a-3941a15e6148" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="05f152b0-9bd8-42e8-af94-b29a26951149" />
+        <actionShapeMoniker Id="6399c48b-5526-47a4-a726-59d7fc6a8a6d" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(1.375 : 2.3125); (0.75 : 2.3125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="032315e8-8778-476c-a1e5-7c1af1137cd1" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="6399c48b-5526-47a4-a726-59d7fc6a8a6d" />
+        <activityFinalNodeShapeMoniker Id="0e32f5e9-0e2e-403e-8b56-1788dfcd521b" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

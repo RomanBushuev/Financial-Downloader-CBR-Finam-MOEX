@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Dapper;
+using DataBaseLink;
+using Core.Mir.BaseTypes;
+using Core.Mir.Enumerations;
+using DataProvider.Output.Mir.DbObject;
+namespace DataProvider.Output.Mir.DbRepository
+{
+    public static class FinType
+    {
+        //find
+        public static fin_type FindId(DbLink dbLink, string ident)
+        {
+            string query = 
+                string.Format(@"select * from fin_type t
+                where t.ident = upper('{0}');" ,ident);
+            var result = dbLink.GetConnection().QueryFirstOrDefault<fin_type>(query);
+            return result;
+        }
+
+        //insert 
+        public static void Insert(DbLink dbLink, fin_type fin_type)
+        {
+            string query =
+                string.Format(@"insert into fin_type(ft_id, ident, title)
+                values(nextval('mir_sequence'), @ident, @title);");
+            dbLink.GetConnection().Execute(query, fin_type);
+        }
+
+        //remove
+        public static void Remove(DbLink dbLink, int ft_id)
+        {
+            string query =
+                string.Format("delete from fin_type t where t.ft_id = {0}", ft_id);
+            dbLink.GetConnection().Execute(query);
+        }
+    }
+}

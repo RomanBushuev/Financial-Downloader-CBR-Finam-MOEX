@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="2be63a10-2b88-46f6-a180-039d1d7c7f27" name="DownloadCurrencies" linkedPackageId="8eaa7080-8a38-4488-a825-f6f5d17bb747" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="edea3f70-bb00-4959-ad7a-f5f8665686e6">
+      <profileInstance Id="def912d9-0b60-48ab-89b9-74c9ff58b829" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b5d31465-b09f-4d75-bbdc-7b6ebf8028fb">
+      <profileInstance Id="b6437e1e-d010-4fed-b0a2-9498a20f9c2d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="5f5fda09-1743-46b1-a858-4765b2f5045f" name="DownloadCurrencies" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ad19984a-0f4f-4021-9c73-e57c03ae8502" />
+        <nodes>
+          <opaqueAction Id="0a3e702e-4db5-4dcf-84be-f26f4ac67cc9" name="Get all available currencies" isLeaf="false">
+            <elementDefinition Id="a5eb289b-62e9-4130-872e-5204bea620e1" />
+            <flowNodeTargets>
+              <controlFlow Id="ed3e3f23-d5b2-4306-93b9-107382457d8d" isLeaf="false">
+                <opaqueActionMoniker Id="faedf0c2-ca77-411e-931e-7ef5b9a774c2" LastKnownName="Send query to CBR" />
+                <elementDefinition Id="0504709e-0a07-4d5d-aa54-fea1dc5c35f5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="faedf0c2-ca77-411e-931e-7ef5b9a774c2" name="Send query to CBR" isLeaf="false">
+            <elementDefinition Id="c2b1c56c-e6f7-4ad3-bdfa-879c457cb9da" />
+            <flowNodeTargets>
+              <controlFlow Id="a290b232-688e-49a5-a9e8-0a26dcb5635d" isLeaf="false">
+                <opaqueActionMoniker Id="4048bb59-5de2-4eac-80e6-71da68088b6f" LastKnownName="Save given results in csv" />
+                <elementDefinition Id="ca498eaf-0300-4b04-9387-4da567c5ceec" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4048bb59-5de2-4eac-80e6-71da68088b6f" name="Save given results in csv" isLeaf="false">
+            <elementDefinition Id="f9f65986-873e-4fdc-abb7-54e2fea4bfe0" />
+            <flowNodeTargets>
+              <controlFlow Id="219c4f2b-8344-4552-b643-6a45d56b4e7f" isLeaf="false">
+                <opaqueActionMoniker Id="68753f8d-034d-4642-a9a7-b2657c9884be" LastKnownName="Make a record in queue" />
+                <elementDefinition Id="1c578228-6578-46f2-860e-5b3d8e9e2865" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="68753f8d-034d-4642-a9a7-b2657c9884be" name="Make a record in queue" isLeaf="false">
+            <elementDefinition Id="a680a305-7586-4b84-91f7-46050a69625e" />
+            <flowNodeTargets>
+              <controlFlow Id="142f5bb4-6815-4725-aee7-02d574daa688" isLeaf="false">
+                <activityFinalNodeMoniker Id="b1380146-5b0a-4f55-ad70-cffe0a4b8c95" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c16eb0b7-1835-4c14-9dd0-daf462b94f08" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="1303f9e4-08b0-4ebd-a82b-714575508234" name="Initial1" isLeaf="false">
+            <elementDefinition Id="245d8fa7-eb45-4b5f-850c-972faf860394" />
+            <flowNodeTargets>
+              <controlFlow Id="b73ab1d1-c97f-432b-8eac-bcc6b74750df" isLeaf="false">
+                <opaqueActionMoniker Id="0a3e702e-4db5-4dcf-84be-f26f4ac67cc9" LastKnownName="Get all available currencies" />
+                <elementDefinition Id="16b8c03a-b6b4-47f6-9e3a-9e79f8615f9a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="b1380146-5b0a-4f55-ad70-cffe0a4b8c95" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="31d1d82b-0f4d-43eb-a7f2-3e81d261fdf1" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="8eaa7080-8a38-4488-a825-f6f5d17bb747" name="ModelingProject1">
+    <elementDefinition Id="605427f5-01cd-4049-9c79-14bc4dcdb4f3" />
+  </package>
+</activityRootModel>

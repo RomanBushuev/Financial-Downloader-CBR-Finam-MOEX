@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLComponentDiagram1">
+  <componentModelMoniker Id="7d16a515-2bb4-48ec-9b7a-ff5295178628" />
+  <nestedChildShapes>
+    <componentShape Id="81b9c5e9-1050-46c4-8baa-df3629f0d0fc" absoluteBounds="0.625, 0.5, 4.5833333333333339, 2.9354166666666663" customColor="161, 199, 231" whiteBoxBoundsHeight="3.4083333333333328" whiteBoxBoundsWidth="6.3437500000000009" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="6.3437500000000009" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="bf22aca7-a651-404a-ba38-c716856d8594" LastKnownName="Windows Server 2012" />
+      <nestedChildShapes>
+        <componentUseShape Id="0a341a77-d18d-47c4-8db1-23d56b15eb78" isExpanded="false" absoluteBounds="3.125, 1.125, 1.8333333333333335, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.6979166666666665" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.6979166666666665" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+          <partMoniker Id="1d15588a-4b29-4d97-a3c5-673d7d0d961e" LastKnownName="Resource agent" />
+        </componentUseShape>
+        <componentUseShape Id="e9f2acbb-f2fe-4d20-874e-e09d8b04f329" isExpanded="false" absoluteBounds="3.125, 2.375, 1.7083333333333322, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.6145833333333322" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.6145833333333322" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+          <partMoniker Id="9e9e0a2f-1720-4f43-b4b7-7158516a2949" LastKnownName="Service agent" />
+        </componentUseShape>
+        <componentUseShape Id="2f254df6-fa70-40bd-b23d-2e433146102a" isExpanded="false" absoluteBounds="0.875, 1.125, 1.5, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+          <partMoniker Id="2bbaf940-05cb-40f6-a839-b00c605d36e9" LastKnownName="Job queue" />
+        </componentUseShape>
+        <componentUseShape Id="b319dfc5-2e30-4371-96db-d4e9227dcea9" isExpanded="false" absoluteBounds="0.875, 2.375, 1.5, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+          <partMoniker Id="913131c0-d48d-4b10-acaa-614e2f84659b" LastKnownName="Database" />
+        </componentUseShape>
+      </nestedChildShapes>
+    </componentShape>
+    <componentShape Id="305f70f0-cfcc-4d10-943b-c78fb3e32ebe" isExpanded="false" absoluteBounds="0.875, 3.75, 1.5, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="bd0eaf0d-1eb0-4897-a835-4d5fee20c837" LastKnownName="GUI" />
+    </componentShape>
+    <componentShape Id="f509d29e-b807-41a0-81f1-8fc197af2058" isExpanded="false" absoluteBounds="5.75, 1.125, 1.8958333333333339, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="2ae7ef3e-3182-4dd6-b34d-b8cd1b71869a" LastKnownName="Moscow Exchange" />
+    </componentShape>
+    <componentShape Id="1bfb05f2-aeed-4b73-84cc-ea15c0ecd020" isExpanded="false" absoluteBounds="5.75, 2.125, 1.895833333333333, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="8c3f0816-3d2e-4925-959d-fcfaabe0c799" LastKnownName="Central bank of Russian" />
+    </componentShape>
+    <componentShape Id="a71b0948-2e95-4034-b6a1-d9b714398695" isExpanded="false" absoluteBounds="5.75, 3.125, 1.895833333333333, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="89c2fcc2-04b0-47a3-8d86-a5be8d8fdfcb" LastKnownName="Finam" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(5.20833333333333 : 1.475); (5.75 : 1.475)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="6153c57c-32ac-4f9e-bb71-d0658aa00dfe" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="81b9c5e9-1050-46c4-8baa-df3629f0d0fc" />
+        <componentShapeMoniker Id="f509d29e-b807-41a0-81f1-8fc197af2058" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(5.20833333333333 : 1.44648740310077); (5.50833333333333 : 1.44648740310077); (5.50833333333333 : 2.475); (5.75 : 2.475)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="037ca083-5816-4d5e-9958-677e6080e21f" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="81b9c5e9-1050-46c4-8baa-df3629f0d0fc" />
+        <componentShapeMoniker Id="1bfb05f2-aeed-4b73-84cc-ea15c0ecd020" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(5.20833333333333 : 1.47916666666667); (5.375 : 1.47916666666667); (5.375 : 3.475); (5.75 : 3.475)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="86f7b18e-68b3-42a5-bb44-18261819f104" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="81b9c5e9-1050-46c4-8baa-df3629f0d0fc" />
+        <componentShapeMoniker Id="a71b0948-2e95-4034-b6a1-d9b714398695" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</componentDiagram>

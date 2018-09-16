@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="bf72119a-1add-4179-b155-b36a3bba48b2" name="DownloadOffers" linkedPackageId="279d2756-40e6-45e4-9391-071319f87e7e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="72b8de80-0323-4725-b358-7b1d5f3f9a73">
+      <profileInstance Id="e3c29d3e-7575-4cc1-b7a2-1a3701829a19" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c634afa1-08ba-48f3-a57c-d9dea46fa358">
+      <profileInstance Id="9f488125-0db9-4899-a84e-9685e6dd607e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="0efda28f-845b-43c9-9fa1-2aeed1d44291" name="DownloadOffers" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="db0316cb-ede3-4df6-a2f8-365ca41ed9b3" />
+        <nodes>
+          <initialNode Id="5e907125-9a6d-404c-8f57-4cbd6af580ac" name="Initial1" isLeaf="false">
+            <elementDefinition Id="745f6057-c19a-4c03-b739-0004fa843e35" />
+            <flowNodeTargets>
+              <controlFlow Id="88417f74-33b9-41ae-82a9-a8b14f3eafff" isLeaf="false">
+                <opaqueActionMoniker Id="f668e133-2fd1-487b-80c7-d599c195c1e8" LastKnownName="Download bonds from database" />
+                <elementDefinition Id="30778ba4-32e3-4cf8-b1a7-b77865c82d2f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="f668e133-2fd1-487b-80c7-d599c195c1e8" name="Download bonds from database" isLeaf="false">
+            <elementDefinition Id="0cc4b51a-e84f-4cb8-b6e2-46ad08078c71" />
+            <flowNodeTargets>
+              <controlFlow Id="ce6689a9-4c91-4315-80d2-97369ea0a538" isLeaf="false">
+                <opaqueActionMoniker Id="77611e49-e120-419e-bb7c-1143d4f3aeab" LastKnownName="Find page for each of bonds with cashflows on Finam" />
+                <elementDefinition Id="8d375579-1f7d-476e-a965-3f5f383a7f62" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="77611e49-e120-419e-bb7c-1143d4f3aeab" name="Find page for each of bonds with cashflows on Finam" isLeaf="false">
+            <elementDefinition Id="1f791c4c-77f2-4b3c-8273-dc3b49fab710" />
+            <flowNodeTargets>
+              <controlFlow Id="fa6091e1-c7e4-4d55-b190-d27e42bce6b4" isLeaf="false">
+                <opaqueActionMoniker Id="1fce6723-d94d-4255-9bb1-bb45fa0495a8" LastKnownName="Save given results in csv" />
+                <elementDefinition Id="219de81d-ecc4-4572-83f4-9e17d60c41da" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1fce6723-d94d-4255-9bb1-bb45fa0495a8" name="Save given results in csv" isLeaf="false">
+            <elementDefinition Id="3202cd25-1a2c-4cdf-857b-3c1d7337e730" />
+            <flowNodeTargets>
+              <controlFlow Id="73121cd1-0684-47c7-80c6-e9d31db28b60" isLeaf="false">
+                <opaqueActionMoniker Id="af756f79-9d73-4017-ba7a-4c123fa7f07e" LastKnownName="Make a record in queue" />
+                <elementDefinition Id="b5c32c6c-94dc-4160-ab14-be7f1ec9c8c7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="af756f79-9d73-4017-ba7a-4c123fa7f07e" name="Make a record in queue" isLeaf="false">
+            <elementDefinition Id="7433de0f-af46-45eb-a5e8-baf5f35bfe8e" />
+            <flowNodeTargets>
+              <controlFlow Id="14a0fbb2-a771-4814-8e1e-750fc1da96de" isLeaf="false">
+                <activityFinalNodeMoniker Id="930570db-a597-40ad-ae7f-fff86f52af84" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="499537e2-9577-4b85-a96e-e824c511ff55" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="930570db-a597-40ad-ae7f-fff86f52af84" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="e06d6f04-6328-4123-867f-17faadf7bc9b" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="279d2756-40e6-45e4-9391-071319f87e7e" name="ModelingProject1">
+    <elementDefinition Id="605427f5-01cd-4049-9c79-14bc4dcdb4f3" />
+  </package>
+</activityRootModel>

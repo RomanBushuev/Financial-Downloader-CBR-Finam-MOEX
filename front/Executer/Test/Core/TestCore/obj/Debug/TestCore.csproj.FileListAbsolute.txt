@@ -1,0 +1,8 @@
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\Test\Core\TestCore\bin\Debug\Core.Mir.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\Test\Core\TestCore\bin\Debug\Core.Mir.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\Test\Core\TestCore\obj\Debug\TestCore.csprojResolveAssemblyReference.cache
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\Test\Core\TestCore\bin\Debug\Test.TestCore.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\Test\Core\TestCore\bin\Debug\Test.TestCore.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\Test\Core\TestCore\obj\Debug\Test.TestCore.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\Test\Core\TestCore\obj\Debug\Test.TestCore.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\Test\Core\TestCore\bin\Debug\QLNet.dll

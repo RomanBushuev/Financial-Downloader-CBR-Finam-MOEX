@@ -1,0 +1,28 @@
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.exe.config
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.exe
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.pdb
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.csprojResolveAssemblyReference.cache
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.exe
+c:\users\bushuevroman\documents\visual studio 2013\Projects\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.pdb
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.exe.config
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.exe
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.pdb
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.exe
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.pdb
+C:\Users\bushuevroman\YandexDisk\MarketData\CBR\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.csprojResolveAssemblyReference.cache
+C:\Users\RomanBushuev\YandexDisk\MarketData\CBR\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.exe.config
+C:\Users\RomanBushuev\YandexDisk\MarketData\CBR\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.exe
+C:\Users\RomanBushuev\YandexDisk\MarketData\CBR\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.exe.config
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.exe
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\obj\Debug\GetCurrenciesFromCBR.csprojResolveAssemblyReference.cache
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.exe
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\GetCurrenciesFromCBR.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\HtmlAgilityPack.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\HtmlAgilityPack.xml
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\Npgsql.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\Npgsql.xml
+C:\Users\RomanBushuev\YandexDisk\MarketData\finam\scripts\GetCurrenciesFromCBR\GetCurrenciesFromCBR\bin\Debug\System.Threading.Tasks.Extensions.xml

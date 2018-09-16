@@ -1,0 +1,218 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using DataProvider.Input.CombinedProvider;
+using DataProvider.Input.MirReader;
+using Core.Mir;
+using Core.Mir.BaseTypes;
+using Core.Mir.Enumerations;
+using Core.Mir.Interfaces;
+using System.Configuration;
+using DataProvider.Input.CombinedProvider;
+
+namespace MURRDesktop.Controls
+{
+    public partial class FinInstruments : UserControl
+    {
+        public IMarketProvider GetMoex()
+        {
+            string connection = ConfigurationManager.AppSettings["mirconnection"];
+            #region mapping mir_moex
+            DataProvider.Input.MirReader.Mapping mapping = new DataProvider.Input.MirReader.Mapping();
+
+            mapping.AI = new Dictionary<Enum, string>()
+            {
+                #region Финансовые инструменты
+                {FinType.Equity, "12"},
+                {FinType.Bond, "13"},
+                {FinType.Fund, "14"},
+                {FinType.Certificate, "15"},
+                {FinType.DepositaryReceipt, "16"},
+                {FinType.Default, "20"},
+                {TimeSeriesAttribute.Close, "3"},
+                {ScalarAttribute.Name, "4"},
+                {ScalarAttribute.Nominal, "9"},
+                {ScalarAttribute.MatDate, "11"},
+                {ScalarAttribute.Currency, "8"},
+                #endregion
+            };
+
+            mapping.TKE = new Dictionary<KeyValuePair<Type, string>, Enum>()
+            {
+                #region Валюта
+                {new KeyValuePair<Type,string>(typeof(Currencies),"CHF"), Currencies.CHF},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"EUR"), Currencies.EUR},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"GBP"), Currencies.GBP},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"RUB"), Currencies.RUB},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"RUR"), Currencies.RUB},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"USD"), Currencies.USD},
+                #endregion
+
+                #region Фин.инструменты
+                {new KeyValuePair<Type, string>(typeof(FinType), "CERTIFICATE"), FinType.Certificate},
+                {new KeyValuePair<Type, string>(typeof(FinType), "DEPOSITARY RECEIPT"), FinType.DepositaryReceipt},
+                {new KeyValuePair<Type, string>(typeof(FinType), "BOND"), FinType.Bond},
+                {new KeyValuePair<Type, string>(typeof(FinType), "EQUITY"), FinType.Equity},
+                {new KeyValuePair<Type, string>(typeof(FinType), "FUND"), FinType.Fund},
+                {new KeyValuePair<Type, string>(typeof(FinType), "FX_RATE"), FinType.FxRate},
+                {new KeyValuePair<Type, string>(typeof(FinType), "PERCENT_CURVE"), FinType.PercentCurve},
+                #endregion
+            };
+
+
+            mapping.ET = new Dictionary<Enum, Type>()
+            {
+                {ScalarAttribute.DetailedType, typeof(FinTypeDetailedLevel)},
+                {ScalarAttribute.Currency, typeof(Currencies)},
+                {ScalarAttribute.FinType, typeof(FinType)},
+            };
+
+            Dictionary<string, object> sq = new Dictionary<string, object>()
+            {
+                {DataProvider.Input.MirReader.Provider.QUOTE, "MOEX"},
+                {DataProvider.Input.MirReader.Provider.SCALAR, "MOEX"},
+            };
+            #endregion
+
+            DataProvider.Input.MirReader.Provider MoexProvider =
+                new DataProvider.Input.MirReader.Provider(connection, mapping);
+            MoexProvider.SetParams(sq);
+
+            return MoexProvider;
+        }
+
+        public IMarketProvider GetCbr()
+        {
+            string connection = ConfigurationManager.AppSettings["mirconnection"];
+            #region mapping mir_cbr
+            DataProvider.Input.MirReader.Mapping mapping2 = new DataProvider.Input.MirReader.Mapping();
+
+            mapping2.AI = new Dictionary<Enum, string>()
+            {
+                #region Финансовые инструменты
+                {FinType.Equity, "12"},
+                {FinType.Bond, "13"},
+                {FinType.Fund, "14"},
+                {FinType.Certificate, "15"},
+                {FinType.DepositaryReceipt, "16"},
+                {FinType.Default, "20"},
+                {TimeSeriesAttribute.Close, "3"},
+                {ScalarAttribute.Name, "4"},
+                {ScalarAttribute.Nominal, "9"},
+                {ScalarAttribute.MatDate, "11"},
+                {ScalarAttribute.Currency, "8"},
+                {Currencies.CHF, "CHF"},
+                {Currencies.EUR, "EUR"},
+                {Currencies.USD, "USD"}
+                #endregion
+            };
+
+            mapping2.TKE = new Dictionary<KeyValuePair<Type, string>, Enum>()
+            {
+                #region Валюта
+                {new KeyValuePair<Type,string>(typeof(Currencies),"CHF"), Currencies.CHF},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"EUR"), Currencies.EUR},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"GBP"), Currencies.GBP},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"RUB"), Currencies.RUB},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"RUR"), Currencies.RUB},
+                {new KeyValuePair<Type,string>(typeof(Currencies),"USD"), Currencies.USD},
+                #endregion
+
+                #region Фин.инструменты
+                {new KeyValuePair<Type, string>(typeof(FinType), "CERTIFICATE"), FinType.Certificate},
+                {new KeyValuePair<Type, string>(typeof(FinType), "DEPOSITARY RECEIPT"), FinType.DepositaryReceipt},
+                {new KeyValuePair<Type, string>(typeof(FinType), "BOND"), FinType.Bond},
+                {new KeyValuePair<Type, string>(typeof(FinType), "EQUITY"), FinType.Equity},
+                {new KeyValuePair<Type, string>(typeof(FinType), "FUND"), FinType.Fund},
+                {new KeyValuePair<Type, string>(typeof(FinType), "FX_RATE"), FinType.FxRate},
+                {new KeyValuePair<Type, string>(typeof(FinType), "PERCENT_CURVE"), FinType.PercentCurve},
+                #endregion
+            };
+
+
+            mapping2.ET = new Dictionary<Enum, Type>()
+            {
+                {ScalarAttribute.DetailedType, typeof(FinTypeDetailedLevel)},
+                {ScalarAttribute.Currency, typeof(Currencies)},
+                {ScalarAttribute.FinType, typeof(FinType)},
+            };
+
+            Dictionary<string, object> sq2 = new Dictionary<string, object>()
+            {
+                {DataProvider.Input.MirReader.Provider.QUOTE, "CBR"},
+                {DataProvider.Input.MirReader.Provider.SCALAR, "CBR"},
+            };
+            #endregion
+
+
+            DataProvider.Input.MirReader.Provider CbrProvider =
+                new DataProvider.Input.MirReader.Provider(connection, mapping2);
+            CbrProvider.SetParams(sq2);
+
+            return CbrProvider;
+        }
+
+
+        private string _connection =
+            ConfigurationManager.AppSettings["mirconnection"];
+
+        public FinInstruments()
+        {
+            InitializeComponent();
+            LoadData();
+        }
+
+        public void LoadData()
+        {
+            treeView1.Nodes.Clear();
+
+            var iConnection = DataBaseLink.Fabricate.CreateConnection(_connection, DataBaseLink.ConnectionType.Npgsql);
+            DataBaseLink.DbLink _dbLink = new DataBaseLink.DbLink(iConnection);
+            //достаем финансовые инструменты и сортируем по папкам 
+
+            IMarketProvider moex = GetMoex();
+            IMarketProvider cbr = GetCbr();
+            DataProvider.Input.CombinedProvider.Provider provider =
+                new DataProvider.Input.CombinedProvider.Provider(new List<IMarketProvider>()
+                    {
+                        moex,
+                        cbr
+                    });
+
+            List<FinType> finTypes = new List<FinType>()
+            {
+                FinType.Bond,
+                FinType.Certificate,
+                FinType.DepositaryReceipt,
+                FinType.Equity,
+                FinType.Fund
+            };
+
+            Dictionary<FinType, string> types = new Dictionary<FinType,string>()
+            {
+                {FinType.Bond, "Облигации"},
+                {FinType.Certificate, "Сертификаты"},
+                {FinType.DepositaryReceipt, "Депозитарные распискы"},
+                {FinType.Equity, "Акции"},
+                {FinType.Fund, "Фонды"},
+            };
+
+            List<PortfolioPosition> positions = provider.GetAllPositions(finTypes);
+
+            foreach (var x in types)
+            {
+                TreeNode root = treeView1.Nodes.Add(x.Value,x.Value);
+                foreach(var z in positions.Where(p=>p.FinType == x.Key))
+                {
+                    root.Nodes.Add(z.Ident, z.Ident);
+                }
+            }
+        }
+    }
+}

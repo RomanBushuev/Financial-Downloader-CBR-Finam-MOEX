@@ -1,0 +1,14 @@
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\Dapper.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\Dapper.Extension.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\Npgsql.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\Z.Dapper.Plus.dll
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\Dapper.xml
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\Npgsql.xml
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\RomanBushuev\YandexDisk\MarketData\Executer\Executer\UnitTestProject1\bin\Debug\Z.Dapper.Plus.xml

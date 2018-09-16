@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="7d16a515-2bb4-48ec-9b7a-ff5295178628" name="UMLComponentDiagram1" linkedPackageId="38f7caa9-8142-4bc3-961e-290f069413e9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e59174cc-82c0-4b51-93f3-06843c30c1cb">
+      <profileInstance Id="e3702d60-96d2-4c70-917d-4710a81beb0e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="37b0b632-213e-41df-a46e-9c510efd8221">
+      <profileInstance Id="2053ed87-0500-4179-a852-1184ae2bb7b5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="bf22aca7-a651-404a-ba38-c716856d8594" name="Windows Server 2012" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1fe74df9-e887-4b59-8b58-0786a2a5b3c6" />
+        <suppliersInternal>
+          <dependency Id="6153c57c-32ac-4f9e-bb71-d0658aa00dfe">
+            <componentMoniker Id="2ae7ef3e-3182-4dd6-b34d-b8cd1b71869a" LastKnownName="Moscow Exchange" />
+            <elementDefinition Id="23b3c4b4-ee13-4498-9fcc-4d92df354417" />
+          </dependency>
+          <dependency Id="037ca083-5816-4d5e-9958-677e6080e21f">
+            <componentMoniker Id="8c3f0816-3d2e-4925-959d-fcfaabe0c799" LastKnownName="Central bank of Russian" />
+            <elementDefinition Id="a0b875ae-9ce6-4fbc-bce7-bc9942889c96" />
+          </dependency>
+          <dependency Id="86f7b18e-68b3-42a5-bb44-18261819f104">
+            <componentMoniker Id="89c2fcc2-04b0-47a3-8d86-a5be8d8fdfcb" LastKnownName="Finam" />
+            <elementDefinition Id="bb0d6839-28bd-4524-a275-3f388c6b3910" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="1d15588a-4b29-4d97-a3c5-673d7d0d961e" name="Resource agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="cc95bc95-c80d-44cb-baf7-3951e471f563" />
+            <type_NamedElement>
+              <componentMoniker Id="d35ccf6e-5450-4fef-a448-e49dfa935580" LastKnownName="Component2" />
+            </type_NamedElement>
+          </part>
+          <part Id="9e9e0a2f-1720-4f43-b4b7-7158516a2949" name="Service agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="19316500-da3f-483f-a18b-59ee444c8346" />
+            <type_NamedElement>
+              <componentMoniker Id="02c4b4ea-6d49-471d-9296-ba680b18488c" LastKnownName="Component1" />
+            </type_NamedElement>
+          </part>
+          <part Id="2bbaf940-05cb-40f6-a839-b00c605d36e9" name="Job queue" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="0ea69f5b-de2a-49b2-b2b1-7d044242988b" />
+            <type_NamedElement>
+              <componentMoniker Id="b0281d51-da97-45c3-b307-82fecbee8f5b" LastKnownName="Component3" />
+            </type_NamedElement>
+          </part>
+          <part Id="913131c0-d48d-4b10-acaa-614e2f84659b" name="Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="e6acc086-8767-4ff7-a4a3-67dbc1d14060" />
+            <type_NamedElement>
+              <componentMoniker Id="1d951cf2-9a7f-4c5e-aec8-82fb80ad3d4e" LastKnownName="Component4" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d35ccf6e-5450-4fef-a448-e49dfa935580" name="Component2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7aeea439-9563-492b-a618-4cef3c485a85" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="02c4b4ea-6d49-471d-9296-ba680b18488c" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb01227a-c840-444e-85a5-b2cb76d3991a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b0281d51-da97-45c3-b307-82fecbee8f5b" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="758a3940-e785-4f25-8039-c51e523b3d26" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="1d951cf2-9a7f-4c5e-aec8-82fb80ad3d4e" name="Component4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c7938788-53fa-442f-a940-c83d52ec27f7" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="bd0eaf0d-1eb0-4897-a835-4d5fee20c837" name="GUI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e221c327-5626-45a6-97cb-2e309919145d" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2ae7ef3e-3182-4dd6-b34d-b8cd1b71869a" name="Moscow Exchange" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c7104d3b-541d-4fe4-ba0f-9d4d5846d3d5" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="8c3f0816-3d2e-4925-959d-fcfaabe0c799" name="Central bank of Russian" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c976cf33-ab96-4df3-b1a3-386c14bb40c1" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="89c2fcc2-04b0-47a3-8d86-a5be8d8fdfcb" name="Finam" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bf997ed3-3b47-4f8c-a6db-7a52bc73d93b" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="38f7caa9-8142-4bc3-961e-290f069413e9" name="ModelingProject1">
+    <elementDefinition Id="605427f5-01cd-4049-9c79-14bc4dcdb4f3" />
+  </package>
+</componentModel>

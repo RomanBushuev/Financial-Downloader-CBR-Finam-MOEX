@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="005269eb-1209-42b4-8135-17af3283b9b4" name="ResourceAgent" linkedPackageId="89d186c6-e25e-47eb-9dc1-575e3cf1b849" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="3aa9bac9-f6fc-4444-a9b5-c11d2d8a825e">
+      <profileInstance Id="dfe642dd-6129-4d93-8331-9874046a6482" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e457b019-61ca-4f0a-989b-91d5f395bfc7">
+      <profileInstance Id="f455fe4d-8b76-4496-a238-3be09a141892" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e43d2535-4132-451f-86bb-80e0036d7978" name="Resource agent" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5345d21f-d497-4468-a92b-5301dda7ce68" />
+        <targetEnds>
+          <association Id="965571c9-1d32-44a8-816f-a0a849dc2f08" isDerived="false" sourceEndRoleName="Resource agent" targetEndRoleName="Download rates" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="24a6f957-53d5-415f-b355-d90dc6032046" LastKnownName="Download rates" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b3755554-d3f1-4d23-97d8-e73bb7822098" name="Resource agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7f519ba-b0c9-4797-90fa-0d4d0e443f96" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2beb3374-b743-4d1a-8f45-0be93ac6007d" name="Download rates" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="22d36ba3-985a-435d-ad51-5a2fc7e06f23" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c3784aec-1225-403e-97c8-4326fb63eb3e" />
+          </association>
+          <association Id="260ef9fa-7466-4147-96a4-e58517e3c836" isDerived="false" sourceEndRoleName="Resource agent" targetEndRoleName="Download offers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="daf95370-16f6-4451-a0f5-3b6752ec24c6" LastKnownName="Download offers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68a1a7d2-ebf0-4185-964a-4f37a8b54c65" name="Resource agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bd189e37-c5e6-4d88-932c-4856790a880f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ec72437-a49e-4bb9-9979-c358b660e12a" name="Download offers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ceb2b3fe-549c-4032-8191-9566cc73d9a2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="25fbb355-06e6-41da-9da4-bb132386fa32" />
+          </association>
+          <association Id="383e1f36-d972-4d9e-bdee-a381147015a8" isDerived="false" sourceEndRoleName="Resource agent" targetEndRoleName="Download currencies " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="729dfbc0-2c3c-4268-8789-952805931d2c" LastKnownName="Download currencies " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="11b0da14-240d-4030-89c8-298af0c068d4" name="Resource agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f1b053ba-62b7-498a-a181-9fb4096a4b79" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1901e12d-609d-44fb-8a95-cd4bb37426b4" name="Download currencies " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3f9610fe-b9c0-4ca5-adc3-694814e13ab2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="afa0e382-d16c-419d-a86a-50087ecf6f4b" />
+          </association>
+          <association Id="cb5959f4-4583-4722-bac6-00f737e68275" isDerived="false" sourceEndRoleName="Resource agent" targetEndRoleName="Download RUONIA" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="480d04a2-0cfe-4f86-88c1-8dd1c4875654" LastKnownName="Download RUONIA" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a8b06dc0-73a9-4e7e-b537-71bfd75ba280" name="Resource agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="15563f91-a381-4643-8c3b-defa1f0abf6a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2803853b-a9a3-483a-92c6-97d405633fb4" name="Download RUONIA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="57c2af1d-51bc-4c5a-949f-c31d77984071" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4a079965-bdb9-4404-922e-5b47099d0d0e" />
+          </association>
+          <association Id="918b43f3-b061-4e91-aee1-4287a08f1d33" isDerived="false" sourceEndRoleName="Resource agent" targetEndRoleName="Download Discount Rate" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4e1532e9-03da-47f7-930f-ebbf19ec5cad" LastKnownName="Download Discount Rate" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5f7a1ced-e05e-4ca8-b34e-fa3092e32e47" name="Resource agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="246000aa-00d9-4928-b077-69d6814aabcf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="166d9358-6f93-4012-ae11-a994dd8820f1" name="Download Discount Rate" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f2307aa-44f9-40e5-8458-2eb9e5807428" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="469f3168-d972-4496-bcda-81c40d5b6b43" />
+          </association>
+          <association Id="7abb601b-9b01-436d-ad5a-65365d9452a6" isDerived="false" sourceEndRoleName="Resource agent" targetEndRoleName="Make backup archive" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f82b881c-4820-4953-9202-a0a4cc736495" LastKnownName="Make backup archive" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25e04fed-1fa5-4a35-81e5-cac920733a53" name="Resource agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc5591e5-f80b-4a8a-8adc-be8742a9ccf2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0148a6dd-32a2-4cee-8cfb-eb39648d55f9" name="Make backup archive" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e4748df5-5bfc-4192-ab20-918a902c18b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8f4e68c-2e14-4ea5-9568-e3eaec362904" />
+          </association>
+          <association Id="6d0e45fe-3b59-4d26-998d-47e2ae54b970" isDerived="false" sourceEndRoleName="Resource agent" targetEndRoleName="Make backup scheme" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e5c6461b-453b-44e0-8409-e3b1adc7e9a6" LastKnownName="Make backup scheme" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="79d60188-4a8f-4acf-91b0-961aac634e9a" name="Resource agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f8cf8c0f-43f8-44c9-bfdb-42f958a9ff2e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22c6d665-f342-4426-b1cc-fbd3add6a03d" name="Make backup scheme" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="71accb7d-bb49-482c-bdf2-84b45d381b7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="97dab466-d929-4fb4-8041-fe2dfa8b250a" />
+          </association>
+          <association Id="b893b44a-1c51-463d-810c-38ddadc341f2" isDerived="false" sourceEndRoleName="Resource agent" targetEndRoleName="Make backup SQL archive" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d8073612-06df-44e4-88cb-fb9486b2aada" LastKnownName="Make backup SQL archive" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a972c04c-cf60-464f-b378-efa2576f32ba" name="Resource agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="acc677f1-f294-45a6-9012-dee51f4faac7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd90ff37-60ce-4f32-b188-4c86029f33b9" name="Make backup SQL archive" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0efff1fa-c451-44e0-883b-d82a43ab79e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="709c620a-0c81-4651-9750-e489cdacbb02" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="24a6f957-53d5-415f-b355-d90dc6032046" name="Download rates" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="27a0a3e8-fc1e-4bc7-81da-2acd3cad0c9e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="daf95370-16f6-4451-a0f5-3b6752ec24c6" name="Download offers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0d076c8-c2a2-4bc8-822e-af062dbf2b66" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="480d04a2-0cfe-4f86-88c1-8dd1c4875654" name="Download RUONIA" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc7fa866-89ca-4c8c-a22b-7aa43fd00dcc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e5c6461b-453b-44e0-8409-e3b1adc7e9a6" name="Make backup scheme" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="33c6e84a-22f9-488d-b227-18cd45a0dfb2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4e1532e9-03da-47f7-930f-ebbf19ec5cad" name="Download Discount Rate" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0514fd61-3805-49da-97ad-c2fd7749c24c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="729dfbc0-2c3c-4268-8789-952805931d2c" name="Download currencies " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e01df950-ac8f-48a4-83a3-41acc9065d98" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f82b881c-4820-4953-9202-a0a4cc736495" name="Make backup archive" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3ecb08ee-54e7-4bc6-b22a-5733c76ff862" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d8073612-06df-44e4-88cb-fb9486b2aada" name="Make backup SQL archive" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f27f8cb-bdbd-4e85-a93e-cf870eb6266d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="89d186c6-e25e-47eb-9dc1-575e3cf1b849" name="ModelingProject1">
+    <elementDefinition Id="605427f5-01cd-4049-9c79-14bc4dcdb4f3" />
+  </package>
+</useCaseModelRoot>

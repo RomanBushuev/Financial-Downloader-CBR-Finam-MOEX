@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="5b9543e4-5f17-42d9-b477-4b06ddbd3b04" name="UMLClassDiagram4" linkedPackageId="1461abf1-f9c0-4897-91bc-0f1e959c8502" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ef09198a-dac1-49d9-9fb3-f8265c7614d9">
+      <profileInstance Id="732fb06f-f70f-451f-86f9-526e2baf5234" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="03e5a905-50ff-403a-aaf4-1b879d49df9d">
+      <profileInstance Id="e1fd1eb4-bae8-4306-bbec-b961695b62c8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="76a6e055-656d-4821-bd4f-1d5a98ba61b2" name="CashFlowAttribute" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a63df8dd-e682-462e-9c62-3d6764764951" />
+        <ownedLiterals>
+          <enumerationLiteral Id="e7585467-b6ab-4199-ba63-d481e59873f8" name="Default">
+            <elementDefinition Id="fdbc3e3c-c735-464c-b2f8-7f272800a354" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a92e8286-3618-497c-bd02-609a3433fbbf" name="Coupon">
+            <elementDefinition Id="b2581580-9af8-4008-a43e-eeaa4cefe22d" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="e9cc4a6b-9eaf-4701-9b2f-27d151992339" name="Redemption">
+            <elementDefinition Id="9a259d00-319b-4c19-936a-234589ccfcfc" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="652a0c9c-59b8-4c5c-88ea-2dbaa7d3ccfe" name="CashFlow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="35e7b900-7fd9-468b-85de-4268b8d8b263" />
+        <ownedAttributesInternal>
+          <property Id="b158614f-c8b0-4602-babf-419a743c8277" name="_store" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="154227c2-063b-4699-958c-d7f29975c623" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e0005899-b768-453b-89a9-64cbe7d4eac7" LastKnownName="SortedDictionary&lt;DateTime, decimal?&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="a3232213-9ead-4292-b28b-95c350b83c2d" name="_attribute" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="49e2837b-f702-4aa2-b88e-29a1b488fee3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="82dabe77-0d3c-4dea-b6d6-23b0557bf21b" LastKnownName="CashFlowAttribute" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1c87f642-de92-42c5-826a-57c9cc5fdffc" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="da47cd5f-5a59-4bf7-b8f0-a2fa10e7e462" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e269a16d-5640-4549-8802-66176a6782f9" name="DateTime date" direction="In" isUnique="false">
+                  <elementDefinition Id="f404d520-d5ed-473f-8263-649b429696f8" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6e1fa7f7-dd42-4647-80af-c384b601e6ab" name="decimal? val" direction="In" isUnique="false">
+                  <elementDefinition Id="a26e95ed-2897-49e4-a40a-f61d12df3853" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1060c0c1-bed4-4edb-8743-a8c7dddcbf72" name="GetValues" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="976cdd7c-1b60-4896-9d78-0337a607da9e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0883955d-4b1f-4a0a-9575-7eac80aabb82" direction="Return" isUnique="false">
+                  <elementDefinition Id="a2169cd1-0a16-4672-85e9-d6c9dc733e34" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c92cb05d-004b-4221-818d-739bd5d21329" LastKnownName="IDictionary&lt;DateTime, decimal?&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="18b2e739-064f-4724-8e73-905d3fea5fa4" name="GetAttribute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2e68beff-7293-455b-a9af-4db1c17a47f4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d8c0ed0b-75b4-445e-bbd2-06f78d42c215" direction="Return" isUnique="false">
+                  <elementDefinition Id="bb19f9d1-18c3-4ff6-b773-6c4255adabe9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82dabe77-0d3c-4dea-b6d6-23b0557bf21b" LastKnownName="CashFlowAttribute" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e0005899-b768-453b-89a9-64cbe7d4eac7" name="SortedDictionary&lt;DateTime, decimal?&gt;" isAbstract="false" isLeaf="false" cachedFullName="SortedDictionary&lt;DateTime, decimal?&gt;">
+        <elementDefinition Id="b9cd02cc-c17b-4d31-8faf-b39b95f6a905" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="82dabe77-0d3c-4dea-b6d6-23b0557bf21b" name="CashFlowAttribute" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CashFlowAttribute">
+        <elementDefinition Id="a63df8dd-e682-462e-9c62-3d6764764951" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c92cb05d-004b-4221-818d-739bd5d21329" name="IDictionary&lt;DateTime, decimal?&gt;" isAbstract="false" isLeaf="false" cachedFullName="IDictionary&lt;DateTime, decimal?&gt;">
+        <elementDefinition Id="780823d8-17a1-400a-a28d-a90335b8645d" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="1461abf1-f9c0-4897-91bc-0f1e959c8502" name="ModelingProject1">
+    <elementDefinition Id="605427f5-01cd-4049-9c79-14bc4dcdb4f3" />
+  </package>
+</logicalClassDesignerModel>

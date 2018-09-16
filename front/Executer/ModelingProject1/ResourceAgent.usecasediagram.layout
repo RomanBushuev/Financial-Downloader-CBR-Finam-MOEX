@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ResourceAgent">
+  <useCaseModelRootMoniker Id="005269eb-1209-42b4-8135-17af3283b9b4" />
+  <nestedChildShapes>
+    <actorShape Id="c06c9531-c362-42db-a323-ad3bd1d82057" absoluteBounds="2.875, 1.75, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="e43d2535-4132-451f-86bb-80e0036d7978" LastKnownName="Resource agent" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="16813d43-5b21-421b-93d8-55421efed48d" absoluteBounds="2.625, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="24a6f957-53d5-415f-b355-d90dc6032046" LastKnownName="Download rates" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.125 : 1.75); (3.125 : 1.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="965571c9-1d32-44a8-816f-a0a849dc2f08" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c06c9531-c362-42db-a323-ad3bd1d82057" />
+        <useCaseShapeMoniker Id="16813d43-5b21-421b-93d8-55421efed48d" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="150c4b78-cbf3-4a88-ab3b-867ab2926469" absoluteBounds="1.125, 1.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="daf95370-16f6-4451-a0f5-3b6752ec24c6" LastKnownName="Download offers" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.875 : 1.89583333333333); (2.00911063979869 : 1.53504609991612)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="260ef9fa-7466-4147-96a4-e58517e3c836" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c06c9531-c362-42db-a323-ad3bd1d82057" />
+        <useCaseShapeMoniker Id="150c4b78-cbf3-4a88-ab3b-867ab2926469" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="444defc1-2fa8-410a-b9b2-b0c28c5430ce" absoluteBounds="1.125, 2.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="480d04a2-0cfe-4f86-88c1-8dd1c4875654" LastKnownName="Download RUONIA" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.875 : 2.1875); (1.90235009811261 : 2.91698742641554)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="cb5959f4-4583-4722-bac6-00f737e68275" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c06c9531-c362-42db-a323-ad3bd1d82057" />
+        <useCaseShapeMoniker Id="444defc1-2fa8-410a-b9b2-b0c28c5430ce" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="29ad47ec-777f-4daf-b721-361b70faa638" absoluteBounds="4, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e5c6461b-453b-44e0-8409-e3b1adc7e9a6" LastKnownName="Make backup scheme" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.375 : 2.04545454545455); (4.03010328825578 : 2.16456423422832)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="6d0e45fe-3b59-4d26-998d-47e2ae54b970" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c06c9531-c362-42db-a323-ad3bd1d82057" />
+        <useCaseShapeMoniker Id="29ad47ec-777f-4daf-b721-361b70faa638" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="0855ee8f-5894-49b4-9ad2-0ff1208b3d9a" absoluteBounds="2.625, 3.25, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4e1532e9-03da-47f7-930f-ebbf19ec5cad" LastKnownName="Download Discount Rate" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.125 : 2.25); (3.125 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="918b43f3-b061-4e91-aee1-4287a08f1d33" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c06c9531-c362-42db-a323-ad3bd1d82057" />
+        <useCaseShapeMoniker Id="0855ee8f-5894-49b4-9ad2-0ff1208b3d9a" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="72f70295-b8d0-444a-88b3-ad8dd312e515" absoluteBounds="1.125, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="729dfbc0-2c3c-4268-8789-952805931d2c" LastKnownName="Download currencies " />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.875 : 2.04166666666667); (2.09934164902526 : 2.17094305849579)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="383e1f36-d972-4d9e-bdee-a381147015a8" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c06c9531-c362-42db-a323-ad3bd1d82057" />
+        <useCaseShapeMoniker Id="72f70295-b8d0-444a-88b3-ad8dd312e515" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="51c8f666-7730-4edf-9d83-bbd8d0ace119" absoluteBounds="4, 2.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f82b881c-4820-4953-9202-a0a4cc736495" LastKnownName="Make backup archive" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.375 : 2.20454545454545); (4.23927499527301 : 2.91167954158701)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="7abb601b-9b01-436d-ad5a-65365d9452a6" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c06c9531-c362-42db-a323-ad3bd1d82057" />
+        <useCaseShapeMoniker Id="51c8f666-7730-4edf-9d83-bbd8d0ace119" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="8acecd92-4557-4abd-b7d8-4b70ac5601b1" absoluteBounds="4, 1.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="d8073612-06df-44e4-88cb-fb9486b2aada" LastKnownName="Make backup SQL archive" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.375 : 1.88636363636364); (4.13002996330203 : 1.54316819849908)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b893b44a-1c51-463d-810c-38ddadc341f2" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c06c9531-c362-42db-a323-ad3bd1d82057" />
+        <useCaseShapeMoniker Id="8acecd92-4557-4abd-b7d8-4b70ac5601b1" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

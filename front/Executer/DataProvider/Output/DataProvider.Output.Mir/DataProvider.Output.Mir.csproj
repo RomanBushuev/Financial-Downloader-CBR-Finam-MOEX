@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02E3ABB5-62AD-48D9-A07E-BF8A9442E461}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataProvider.Output.Mir</RootNamespace>
+    <AssemblyName>DataProvider.Output.Mir</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Dapper.1.50.4\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper.Extension, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Dapper.Extension.1.0.0.1\lib\net45\Dapper.Extension.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=3.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Npgsql.3.2.7\lib\net45\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbObject\cashflow.cs" />
+    <Compile Include="DbObject\cashflow_types.cs" />
+    <Compile Include="DbObject\curves.cs" />
+    <Compile Include="DbObject\curve_list.cs" />
+    <Compile Include="DbObject\data_source.cs" />
+    <Compile Include="DbObject\dict_item.cs" />
+    <Compile Include="DbObject\fcs.cs" />
+    <Compile Include="DbObject\ffd.cs" />
+    <Compile Include="DbObject\fin_field.cs" />
+    <Compile Include="DbObject\fin_instrument.cs" />
+    <Compile Include="DbObject\fin_type.cs" />
+    <Compile Include="DbObject\Scalars\fisd_date.cs" />
+    <Compile Include="DbObject\fisd_dq.cs" />
+    <Compile Include="DbObject\Scalars\fisd_item.cs" />
+    <Compile Include="DbObject\Scalars\fisd_num.cs" />
+    <Compile Include="DbObject\Scalars\fisd_str.cs" />
+    <Compile Include="DbRepository\Cashflow.cs" />
+    <Compile Include="DbRepository\CashFlowType.cs" />
+    <Compile Include="DbRepository\CurveList.cs" />
+    <Compile Include="DbRepository\Curves.cs" />
+    <Compile Include="DbRepository\DataSource.cs" />
+    <Compile Include="DbRepository\DictItem.cs" />
+    <Compile Include="DbRepository\FCS.cs" />
+    <Compile Include="DbRepository\FFD.cs" />
+    <Compile Include="DbRepository\FinField.cs" />
+    <Compile Include="DbRepository\FinInstrument.cs" />
+    <Compile Include="DbRepository\FinType.cs" />
+    <Compile Include="DbRepository\FisdDate.cs" />
+    <Compile Include="DbRepository\FisdDq.cs" />
+    <Compile Include="DbRepository\FisdItem.cs" />
+    <Compile Include="DbRepository\FisdNum.cs" />
+    <Compile Include="DbRepository\FisdStr.cs" />
+    <Compile Include="Mapping.cs" />
+    <Compile Include="Provider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DataBaseLink\DataBaseLink\DataBaseLink.csproj">
+      <Project>{cde8eb37-79da-4c69-9c3e-88368cc93523}</Project>
+      <Name>DataBaseLink</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Mir\Mir\Core.Mir.csproj">
+      <Project>{226c45b2-ac1b-403b-a9af-4e6d512d5dae}</Project>
+      <Name>Core.Mir</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
